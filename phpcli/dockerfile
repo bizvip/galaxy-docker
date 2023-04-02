@@ -16,7 +16,7 @@ RUN apk update && apk add --no-cache \
     unzip \
     zlib-dev \
     libzip-dev \
-    oniguruma-dev \
+    oniguruma-dev
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
