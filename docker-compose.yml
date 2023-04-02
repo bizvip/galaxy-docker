@@ -58,7 +58,7 @@ services:
       app_net:
         ipv4_address: 172.100.100.110
 
-  hyperf:
+  galaxy_serv:
     image: php_cli:8.2.4
     #    build:
     #      context: .
@@ -211,7 +211,7 @@ services:
   #        ipv4_address: 172.100.100.120
 
   nacos:
-    image: nacos/nacos-server:latest
+    image: nacos/nacos-server:v2.1.2-slim
     ports:
       - "10010:8848"
     environment:
