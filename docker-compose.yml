@@ -211,11 +211,12 @@ services:
   #        ipv4_address: 172.100.100.120
 
   nacos:
-    image: nacos/nacos-server:v2.2.1-slim
+    image: nacos/nacos-server:v2.1.2-slim
     ports:
-      - "10010:8848"
+      - "18848:8848"
     environment:
       MODE: standalone
+      NACOS_AUTH_IDENTITY_KEY: "nacos"
     networks:
       app_net:
         ipv4_address: 172.100.100.200
